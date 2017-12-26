@@ -1,11 +1,4 @@
-var filter = {
-    url:
-    [
-      { hostContains: "reddit.com" },
-      { hostContains: "facebook.com" },
-      { hostContains: "twitter.com" },
-    ]
-  }
+var pattern = ['*://*.twitter.com/*']
 
 function redirect(requestDetails) {
     console.log("Redirecting: " + requestDetails.url);
@@ -21,4 +14,7 @@ function onError(error) {
     console.log(`Error: ${error}`);
 }
   
-browser.webNavigation.onBeforeNavigate.addListener(redirect, filter);
+browser.webRequest.onBeforeRequest.addListener(
+    redirect,
+    {urls: pattern, types: ["main_frame"]}
+  );
