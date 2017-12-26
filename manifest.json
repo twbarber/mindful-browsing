@@ -1,0 +1,21 @@
+{
+  "description": "Mindful Browsing",
+  "manifest_version": 2,
+  "name": "webRequest-demo",
+  "version": "1.0",
+  
+  "permissions": [
+    "webNavigation",
+    "tabs",
+    "<all_urls>"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "web_accessible_resources": [
+    "mindful.html"
+  ]
+
+}
