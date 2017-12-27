@@ -8,4 +8,4 @@ A FireFox extension meant to bring mindfullness to web browsing.
 2. When navigating to that domain, you'll be made aware that you're navigating to that domain.
 3. Acknowledge and continue or go back to what you were doing.
 
-*Shortened Repo Link:* https://git.io/vb55H
+**Shortened Repo Link:** https://git.io/vb55H
